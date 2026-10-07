@@ -8,7 +8,7 @@ def chunk_text(text: str) -> list[str]:
     tokens = _enconding.encode(text)
     if not tokens:
         return []
- 
+
     start = 0
     chunks = []
     step = CHUNK_SIZE_TOKENS - CHUNK_OVERLAP_TOKENS 
